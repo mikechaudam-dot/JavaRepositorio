@@ -8,7 +8,10 @@ public class ValidarLetraDni {
 	//Sub string 
 	public static boolean dniValido (String dni){
 		String dniSinLetra;
+		
+		//Me quedo con la parte numerica del String, pero sigue siendo un String
 		dniSinLetra = dni.substring(0,8);
+		//Lo paso a entero
 		//el length -1 asumimos que estamos buscando el ultimo digito 
 		//Si en el futuro cambia la longitud del dni no tengo que tocar el metodo
 		char letra = dni.charAt(dni.length()-1);

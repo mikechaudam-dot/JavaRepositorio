@@ -24,10 +24,9 @@ public class AdivinarNumero {
 				System.out.print("Fallaste es menor");
 			}else {
 				System.out.print("Acertaste");
-			}
-			
+			}				
+		}
 		while (numero!=numeroPensado);
-	}
 
 }
 	
