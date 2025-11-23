@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class CuentaAtras {
+public class CuentaAtrasV2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -11,23 +11,15 @@ public class CuentaAtras {
 		System.out.println("Ingresa un numero entero positivo: ");
 		n = sc.nextInt();
 		
-		//While
-		
-		//1 star 
 		int i = n;
 		
-		//2. Condition 
-		while (i >= 0) {
+		// do while 
+		do {
 			System.out.println(i);
-			//3. Actualization 
-			i = i - 1; // o account--;
-			continue;
-		}
+			i = i - 1;
+		} while (i >= 0);
 		sc.close();
-		
-		}
-		//do while 
-				
 		
 	}
 
+}
