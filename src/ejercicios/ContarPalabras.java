@@ -18,6 +18,7 @@ public class ContarPalabras {
 			}
 		}
 		System.out.print("El numero de palabras son " + contador);
+		sc.close();
 		// TODO Auto-generated method stub
 
 	}
