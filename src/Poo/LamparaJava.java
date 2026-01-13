@@ -7,7 +7,6 @@ package Poo;
 		private boolean estaEncendida;
 		
 		
-		
 		public LamparaJava(String color, String marca){
 			this.color = color;
 			this.marca = marca;

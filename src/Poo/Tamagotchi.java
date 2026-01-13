@@ -19,12 +19,28 @@ public class Tamagotchi {
 		
 	}
 	
+	public void status() {
+		System.out.println("Tu mascota " + nombre + " nivel de hambre " + hambre + " energia " + energia);
+	}
+	
 	public void comer() {
-		System.out.print("Alimentaste a tu mascota " + " hambre : " + (hambre - 10));
+		if (hambre <= 10) {
+			this.hambre = 0;
+		}else {
+			this.hambre -= 10;
+		}
+	}
+	
+	public void dormir() {
+		this.energia=100;
 	}
 	
 	public void jugar() {
-		System.out.print("Tu mascota se divierte jugando " + " hambre: " + (hambre + 15) + "energia" );
+		if(this.energia >=20) {
+			if (this.hambre<85) {
+				this.hambre+=15;
+			}
+		}
 	}
 	
 }
