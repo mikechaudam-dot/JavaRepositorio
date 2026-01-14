@@ -23,12 +23,16 @@ public class AppTamagotchi {
 			System.out.println("1 Jugar");
 			System.out.println("2 comer");
 			System.out.println("3 dormir");
-			System.out.println("4 status");
+			System.out.println("4 estado");
+			System.out.println("0 Salir del programa");
 			System.out.println("Selecciona una opcion");
 			
 			opcion = sc.nextInt();
 			
 			switch (opcion) {
+			   case 0:
+				   System.out.print("Saliendo del programa..");
+				   break;
 			   case 1:
 				   tama1.jugar();
 				   break;
@@ -37,13 +41,16 @@ public class AppTamagotchi {
 				   break;
 			   case 3:
 				   tama1.dormir();
+				   break;
 			   case 4:
-				   System.out.println("Saliendo del programa...");
+				   tama1.status();
 				   break;
 				default:
 					System.out.println("Opcion no valida, intenta de nuevo");
 			}
-		}while(opcion != 4);
+		}while(opcion != 0);
+		
+		sc.close();
 		
 		
 		/*
