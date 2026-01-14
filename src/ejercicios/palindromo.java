@@ -8,16 +8,19 @@ public class palindromo {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		String palabra;
-		boolean esPalindrmo = true;
+		boolean esPalindromo = true;
 		
 		System.out.print("Ingresa una palabra para ver si es palindromo: ");
-		palabra = sc.next();
+		String palabra = sc.nextLine();
 		
 		System.out.print("Palabra ingresada es " + palabra );
 		
-		for(int i = 0; i < palabra.length(); i++){
-			if(chartAt(i) palabra.length - 1 - i = palabra(i));
+		for(int i = 0; i < palabra.length()/2; i++){
+			if(palabra.charAt(i) != palabra.charAt(palabra.length()- 1 - i)) {
+				esPalindromo = false;
+				break;
+			}else if(palabra.charAt(i) == palabra.charAt(palabra.length()- 1 - i)) {
+			}
 		}
 
 	}
