@@ -75,17 +75,21 @@ public class TresEnRaya {
 	}
 
 	public static void main(String[] args) {
-		//Aqui va el juego 
+		Scanner sc = new Scanner(System.in);
+		//El jugador elije su ficha 
 		crearTablero();
-		mostrarTablero();
-		colocarFicha(1,1,'x');
-		mostrarTablero();
-		colocarFicha(0,0,'x');
-		mostrarTablero();
-		colocarFicha(2,2,'x');
-		mostrarTablero();
-		colocarFicha(2,2,'x');
-		hayGanador();
+		System.out.println("Elige el caracter para el jugador 1");
+		char fichaJugador = sc.nextLine().charAt(0);
+		System.out.println("Elige el caracter para el jugador 1");
+		char fichaRival = sc.nextLine().charAt(0);
+		
+		//Empieza el jugador 1, vamos a llevar el turno con un boolean
+		boolean turnoJugador1=true;
+		
+		System.out.println("Elige una fila del 1 al 3: ");
+		
+		
+	
 		
 	}
 
