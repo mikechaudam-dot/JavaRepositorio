@@ -1,4 +1,4 @@
-package Poo;
+package poo;
 
 public class Estudiante {
 	private String nombre;

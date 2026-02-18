@@ -1,4 +1,4 @@
-package Poo;
+package poo;
 
 public class vehiculo {
 	protected String marca;

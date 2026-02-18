@@ -1,4 +1,4 @@
-package Poo;
+package poo;
 
 public class coche extends vehiculo {
 	protected int numeroPuertas;
