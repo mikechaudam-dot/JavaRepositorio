@@ -9,8 +9,9 @@ public class RegistroLicitacionesArrayList {
 	public static void main(String[] args) {
 		// Creamos el scanner y lo declaramos
 		Scanner sc = new Scanner(System.in);
+		//La variable codigo es la que ingresaremos para llenar la tabla
 		String codigo;
-		// Declaramos otra variable que es la que se ingresa para la busqueda
+		//Variable para hacer la comparacion 
 		String busqueda;
 		// Declaramos el arrayList
 		ArrayList<String> licitaciones = new ArrayList<>();
@@ -20,7 +21,7 @@ public class RegistroLicitacionesArrayList {
 			codigo = sc.nextLine();
 			licitaciones.add(codigo);
 		}
-		// Declaramos esta veriable Booleana que funcionara como bandera
+		// Declaramos veriable funcionara como bandera
 		boolean encontrado = false;
 		// Comprobamos que las licitaciones esten:
 		System.out.println("¿Que licitacion buscas?");
