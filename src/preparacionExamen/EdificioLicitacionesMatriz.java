@@ -21,7 +21,7 @@ public class EdificioLicitacionesMatriz {
 		//puntuaciones[2][1] = 5; 
 		
 		
-		//Cremaos el bucle para rellenar las matrices 
+		//Creamos el bucle para rellenar las matrices 
 		for(int i = 0; i < puntuaciones.length; i++ ){
 			for(int j = 0; j < puntuaciones[i].length; j++) {
 				System.out.println("Ingresa la nota en la fila: " + i + " y de la columna: " + j);
@@ -37,8 +37,8 @@ public class EdificioLicitacionesMatriz {
 		}
 		//Estr print muestra la tabla, la matriz
 		System.out.println(Arrays.deepToString(puntuaciones));
-		//Segundo bucle para su
 		
+		//Segundo bucle para saber y comparar quien es el ganador
 		for(int i = 0; i < 3; i++ ) {
 			int total = 0;
 			for(int j = 0; j < 3; j++) {
