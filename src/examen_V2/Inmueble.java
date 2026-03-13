@@ -1,6 +1,6 @@
 package examen_V2;
 
-public class Inmueble {
+public abstract class Inmueble {
 	private int id;
 	private String direccion;
 	private double precioVenta;
