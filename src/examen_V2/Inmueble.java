@@ -1,6 +1,7 @@
 package examen_V2;
 
-public abstract class Inmueble {
+//La clase debe ser abstracta ya que no se puede crear un inmueble como tal.
+public abstract class Inmueble {  //Se debe poner el sealed, para que putas se debe poner, y cual es el complemento de esto?
 	private int id;
 	private String direccion;
 	private double precioVenta;
