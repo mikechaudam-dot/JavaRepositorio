@@ -1,6 +1,7 @@
 package gymkana;
 
 import java.time.LocalDate;
+import java.time.DayOfWeek;
 import java.time.Period;
 import java.time.format.TextStyle;
 import java.time.temporal.ChronoUnit;
@@ -37,19 +38,17 @@ public class MiFecha {
 		//Fase 3 Proximo cumple
 		
 		miFechaNacimiento = miFechaNacimiento.withYear(2026);
-		enum DiaFinSemana{
-			SATURDAY,
-			SUNDAY
-		}
 		
 		System.out.println("Tu proximo cumpleaños " + miFechaNacimiento);
 		System.out.println("Dias que faltan: " + ChronoUnit.DAYS.between(fechaHoy, miFechaNacimiento));
 		System.out.println("Caera en: " + miFechaNacimiento.getDayOfWeek().getDisplayName(TextStyle.FULL,idioma).toUpperCase() );
 		
-		if( miFechaNacimiento.getDayOfWeek() != DiaFinSemana) {
-			System.out.println();
+		if( miFechaNacimiento.getDayOfWeek() == DayOfWeek.SATURDAY || miFechaNacimiento.getDayOfWeek() == DayOfWeek.SUNDAY ) {
+			System.out.println("Es fin de semana");
+		}else {
+			System.out.println("Es dia laboral");
 		}
-		System.out.println("Tipo de dia " + miFechaNacimiento.DayOf);
+
 
 	}
 
