@@ -34,11 +34,8 @@ public class AnnalysnInflitration {
 	 }
 	 
 	 public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisionerIsAwake, boolean petDogIsPresent) {
-		 if(knightIsAwake && !archerIsAwake && prisionerIsAwake && petDogIsPresent) {
-			 System.out.println("Attack dog, time to go home boys!!!!!!");
-			 return true;
-		 }else if(!knightIsAwake && !archerIsAwake && prisionerIsAwake && !petDogIsPresent){
-			 System.out.println("Shiiii Time to go home man!!!!!!");
+		 if((knightIsAwake && !archerIsAwake && prisionerIsAwake && petDogIsPresent) || (!knightIsAwake && !archerIsAwake && prisionerIsAwake && !petDogIsPresent)) {
+			 System.out.println("Time to go home boys!!!!!!");
 			 return true;
 		 }else {
 			 System.out.println("Wait for the right moment");
@@ -50,8 +47,8 @@ public class AnnalysnInflitration {
 		
 		boolean knightIsAwake = false;
 		boolean archerIsAwake = false;
-		boolean prisionerIsAwake = true;
-		boolean petDogIsPresent = false;
+		boolean prisionerIsAwake = false;
+		boolean petDogIsPresent = true;
 		
 		AnnalysnInflitration.canFastAttack(knightIsAwake);
 		AnnalysnInflitration.canSpy(knightIsAwake, archerIsAwake, prisionerIsAwake);
