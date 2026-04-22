@@ -32,7 +32,7 @@ public class Condicionales {
 		//4 Crea un programa que diga si un numero es par o impar
 		int num4 = 3;
 		if( num4 % 2 == 0) {
-			
+
 		}
 	}
 
