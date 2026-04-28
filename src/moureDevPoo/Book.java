@@ -4,10 +4,10 @@ package moureDevPoo;
 public class Book {
 	String title;
 	String autor;
-	/*
+	
 	public Book (String title, String autor) {
 		this.title = title;
 		this.autor = autor;
 	}
-*/
+
 }
