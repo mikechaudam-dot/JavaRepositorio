@@ -1,11 +1,12 @@
 package moureDevPoo;
 
 //5 Crea una clase Student con atributo score y un metodo si aprobo o suspendio >= 60
-public class Student {
+public class Student extends Person {
 	double score;
 	
 	//Creamos el coonstructor para instanciar el objeto de una con el score
-	public Student (double score){
+	public Student (String name, int age, double score){
+		super(name,age);
 		this.score = score;
 	}
 	
