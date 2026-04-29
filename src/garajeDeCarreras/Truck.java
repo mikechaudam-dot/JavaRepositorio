@@ -24,11 +24,4 @@ public class Truck extends Vehicle {
 		System.out.println("Es muy pesado");
 	}
 	
-	public double acelerate() {
-		return 10;
-	}
-	
-	public double acelerate(int amount) {
-		return amount;
-	}
 }

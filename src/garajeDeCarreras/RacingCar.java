@@ -16,6 +16,14 @@ public class RacingCar extends Vehicle {
 		this.topSpeed = topSpeed;
 	}
 	
+	public double acelerate() {
+		return 10;
+	}
+	
+	public double acelerate(int amount) {
+		return amount;
+	}
+	
 	@Override
 	public void drive() {
 		System.out.println("Es muy veloz");
