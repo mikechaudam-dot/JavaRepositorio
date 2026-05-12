@@ -11,10 +11,16 @@ public class Tabla {
 		int dimension = sc.nextInt();
 		
 		//Generamos el bucle que va a ir imprimiento la tabla
-		for(int i = 1; i <= dimension; i++) {
+		for(int i = 0; i <= dimension; i++) {
 			System.out.println();
-			for(int j = 1; j <= dimension; j++) {
-				System.out.print(j + " \t" );
+			for(int j = 0; j <= dimension; j++) {
+				if(i == j){
+					System.out.print("\t" + "X");
+				}else if(i > j) {
+					System.out.print("\t" + (i + j));
+				}else if(i < j) {
+					System.out.print("\t" + (j - i));
+				}
 			}
 		}
 		sc.close();
