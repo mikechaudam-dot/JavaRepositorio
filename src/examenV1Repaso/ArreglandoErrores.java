@@ -18,16 +18,17 @@ public class ArreglandoErrores {
         String apellido = "";
 
         int posicionPrimerEspacio = entrada.indexOf(' ');
+        
 
         if (posicionPrimerEspacio == -1) {
             nombre = entrada;
         }else{
             nombre = entrada.substring(0, posicionPrimerEspacio);
             //Por si ha separdo el nombre del apellido con más de un espacio
-            apellido = entrada.substring(posicionPrimerEspacio + 2).trim();
+            apellido = entrada.substring(posicionPrimerEspacio + 1).trim();
         }
         
-        scanner.nextLine(); // Limpiar el buffer por lo que pueda ocurrir
+        //scanner.nextLine(); // Limpiar el buffer por lo que pueda ocurrir
         
         System.out.println ("Bienvenido/a: " + nombre + " " + apellido);
 
@@ -46,10 +47,13 @@ public class ArreglandoErrores {
             switch (opcion) {
                 case 1:
                 	mostrarIniciales(nombre, apellido);
+                	break;
                 case 2:
-                	mostrarMayusculas(apellido, nombre);
+                	mostrarMayusculas(nombre, apellido);
+                	break;
                 case 3:
                     generarNick(nombre, apellido);
+                    break;
                 case OPCION_SALIR:
                     System.out.println("Saliendo del programa...");
                     break;
@@ -83,18 +87,18 @@ public class ArreglandoErrores {
     }
     
     public static void mostrarMayusculas(String nombre, String apellido) {
-        if (!nombre.isEmpty()) {
-            System.out.println("En mayúsculas: " + nombre.toUpperCase() + " " + apellido.toLowerCase());
+        if (!nombre.isEmpty() && !apellido.isEmpty()) {
+            System.out.println("En mayúsculas: " + nombre.toUpperCase() + " " + apellido.toUpperCase());
         } else {
             System.out.println("El nombre está vacío.");
         }
     }
 
     public static void generarNick(String nombre, String apellido) {
-        if (nombre.length() <= 3 && apellido.length() <= 3) {
+        if (nombre.length() >= 3 && apellido.length() >= 3) {
             StringBuilder nickBuilder = new StringBuilder();
-            nickBuilder.append(nombre.substring(1, 3));
-            nickBuilder.append(apellido.substring(1, 3));
+            nickBuilder.append(nombre.substring(0, 3));
+            nickBuilder.append(apellido.substring(0, 3));
             System.out.println("Nick generado: " + nickBuilder.toString().toLowerCase());
         } else {
             System.out.println("Nombre o apellido demasiado cortos para generar un nick (se requieren 3 letras en cada uno).");
