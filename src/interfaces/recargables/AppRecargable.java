@@ -22,9 +22,6 @@ public class AppRecargable {
 		dispositivos.add(movil1);
 		dispositivos.add(lin1);
 		
-		public void supervisarEnergia(Recargable r) {
-			System.out.println("Nivel de bateria de el dispositivo " + r + " es " + obtenerNivelBateria);
-		}
 	}
 
 }
