@@ -25,6 +25,18 @@ public class CocheElectrico extends Vehiculo implements Recargable {
 		return "CocheElectrico [motor=" + motor + ", nivelBateria=" + nivelBateria + ", getColor()=" + getColor()
 				+ ", getCombustible()=" + getCombustible() + ", getTipo()=" + getTipo() + "]";
 	}
+
+	@Override
+	public void cargar() {
+		System.out.println("Bateria cargando ");
+		do{nivelBateria ++;
+		}while (nivelBateria <= 100 && nivelBateria >= 5);
+	}
+
+	@Override
+	public double obtenerNivelBateria() {
+		return nivelBateria;
+	}
 	
 	
 	

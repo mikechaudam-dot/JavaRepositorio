@@ -1,6 +1,6 @@
 package interfaces.recargables;
 
-public class Vehiculo implements Recargable {
+public class Vehiculo {
 	
 	private String color;
 	private String combustible;
@@ -34,6 +34,8 @@ public class Vehiculo implements Recargable {
 	public String toString() {
 		return "Vehiculo [color=" + color + ", combustible=" + combustible + ", tipo=" + tipo + "]";
 	}
+	
+	
 	
 	
 

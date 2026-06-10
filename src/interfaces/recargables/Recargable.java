@@ -2,10 +2,11 @@ package interfaces.recargables;
 
 public interface Recargable {
 	
-	static void cargar () {
-		System.out.println("El dispositivo se esta cargando");
-	};
+	void cargar ();
 	
-	static int obtenerNivelBateria();
+	double obtenerNivelBateria();
+	
 
 }
+
+

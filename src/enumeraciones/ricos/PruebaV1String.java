@@ -29,7 +29,7 @@ public class PruebaV1String {
             Tarea t = new Tarea("Implementar login");
             t.cambiarEstado(Tarea.ASIGNADA);
             t.cambiarEstado(Tarea.EN_PROGRESO);
-            t.cambiarEstado(Tarea.EN_REVISION);
+            //t.cambiarEstado(Tarea.EN_REVISION);
             t.cambiarEstado(Tarea.RESUELTA);
             afirmar("Flujo completo", t.getEstado().equals(Tarea.RESUELTA));
         } catch (Exception e) {

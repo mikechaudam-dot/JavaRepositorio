@@ -33,6 +33,28 @@ public class Linterna implements Recargable {
 	public String toString() {
 		return "Linterna [tipoLuz=" + tipoLuz + ", potencia=" + potencia + ", nivelBateria=" + nivelBateria + "]";
 	}
+
+
+	@Override
+	public void cargar() {
+		if(nivelBateria <= 30){
+			System.out.println("Bateria baja, cargando bateria....");
+			System.out.println("......");
+			System.out.println("....");
+			nivelBateria = 100;
+		}else{
+			System.out.println("Bateria con buen nivel de carga");
+		}
+	}
+
+
+	@Override
+	public double obtenerNivelBateria() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
 	
 	
 
